@@ -28,7 +28,7 @@
             <dependency>
                 <groupId>org.testcontainers</groupId>
                 <artifactId>testcontainers-bom</artifactId>
-                <version>1.18.3</version>
+                <version>1.21.4</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -88,6 +88,7 @@
                         <DOCKER_HOST>npipe:////./pipe/docker_engine</DOCKER_HOST>
                         <TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE>//./pipe/docker_engine</TESTCONTAINERS_DOCKER_SOCKET_OVERRIDE>
                         <TESTCONTAINERS_HOST_OVERRIDE>localhost</TESTCONTAINERS_HOST_OVERRIDE>
+                        <TESTCONTAINERS_RYUK_DISABLED>true</TESTCONTAINERS_RYUK_DISABLED>
                     </environmentVariables>
                     <includes>
                         <include>**/*Test.java</include>
